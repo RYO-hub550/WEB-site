@@ -1,0 +1,111 @@
+.kv{
+  width: 100%;
+  height: 600px;
+  margin-top: 100px;
+  .kv_content{
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    .kv_img{
+      width: 350px;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 50%;
+      padding: 1%;
+    }
+    .kv_box{
+      width: 50%;
+      height: 450px;
+      position: relative;
+      .my_name{
+        width: 300px;
+        font-size: 29px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        padding: 2%;
+        border-radius: 8px;
+        background-color: rgba(47, 43, 43, 0.7);
+      }
+      .text_list{
+        width: 430px;
+        text-align: left;
+        padding: 2%;
+        border-radius: 8px;
+        background-color: rgba(85, 78, 78, 0.7);
+        position: absolute;
+        top: 150px;
+        left: 80px;
+        .kv_item{
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 769px){
+  .kv{
+    .kv_content{
+      width: 100%;
+      .kv_img{
+        width: 300px;
+        height: 300px;
+      }
+      .kv_box{
+        .my_name{
+          width: 250px;
+          font-size: 24px;
+        }
+        .text_list{
+          width: 380px;
+          text-align: left;
+          padding: 2%;
+          border-radius: 8px;
+          background-color: rgba(85, 78, 78, 0.7);
+          position: absolute;
+          top: 150px;
+          left: 0;
+          .kv_item{
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 375px){
+  .kv{
+    .kv_content{
+      width: 100%;
+      .kv_img{
+        width: 200px;
+        height: 200px;
+      }
+      .kv_box{
+        position: relative;
+        .my_name{
+          width: 200px;
+          font-size: 12px;
+          margin: 0;
+          position: absolute;
+          top: 0;
+          left: -100px;
+        }
+        .text_list{
+          width: 250px;
+          text-align: left;
+          padding: 2%;
+          border-radius: 8px;
+          background-color: rgba(85, 78, 78, 0.7);
+          position: absolute;
+          top: 150px;
+          left: -100px;
+          font-size: 10px;
+          .kv_item{
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+}

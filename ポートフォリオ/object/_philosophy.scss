@@ -1,0 +1,109 @@
+.philosophy{
+  width: 100%;
+  color: #000;
+  .philosophy_content{
+      width: 100%;
+      .philosophy_list{
+        display: flex;
+        width: 100%;
+        margin-top: 50px;
+        .philosophy_item{
+          width: 30%;
+          margin: 0 auto;
+          text-align: center;
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 3px 6px 6px #000;
+          .boxInner{
+            width: 100%;
+            .philosophy_img{
+              width: 150px;
+              height: 150px;
+              object-fit: cover;
+            }
+            .philosophy_box{
+              padding: 2%;
+              height: 200px;
+              width: 100%;
+              .philosophy_title{
+                margin-bottom: 15px;
+                font-size: 24px;
+                font-weight: bold;
+              }
+              .philosophy_desc{
+                font-size: 18px;
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
+   }
+}
+
+@media screen and (max-width: 769px){
+  .philosophy{
+    width: 100%;
+    color: #000;
+    .philosophy_content{
+        width: 100%;
+        .philosophy_list{
+          display: flex;
+          width: 100%;
+          margin-top: 50px;
+          .philosophy_item{
+            width: 30%;
+            height: 350px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 3px 6px 6px #000;
+            .boxInner{
+              width: 100%;
+              height: 350px;
+              .philosophy_box{
+                .philosophy_title{
+                  font-size: 20px;
+                }
+                .philosophy_desc{
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+     }
+  }
+}
+@media screen and (max-width: 375px){
+  .philosophy{
+    .philosophy_content{
+        .philosophy_list{
+          display: block;
+          width: 100%;
+          margin-top: 50px;
+          .philosophy_item{
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 30px;
+            .boxInner{
+              .philosophy_box{
+                height: 200px;
+                width: 100%;
+                .philosophy_title{
+                  margin-bottom: 15px;
+                  font-size: 24px;
+                  font-weight: bold;
+                }
+                .philosophy_desc{
+                  font-size: 18px;
+                  text-align: left;
+                }
+              }
+            }
+          }
+        }
+     }
+  }
+}

@@ -1,0 +1,27 @@
+.contact{
+  width: 100%;
+  .contact_box{
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    .contact_title{
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+    .contact_text{
+      font-size: 20px;
+      margin-bottom: 50px;
+    }
+    .contact_btn{
+      font-size: 24px;
+      padding: 2%;
+      color: #fff;
+      border-radius: 8px;
+      background-color: orange;
+    }
+    .contact_btn:hover{
+      transform: scale(1.2);
+      transition: all .5s;
+    }
+  }
+}
